@@ -1,5 +1,5 @@
 #!/bin/sh
-
+#To convert flac audio to mp3
 for i in "$@"
 do
     echo -e \\e[1\;31m$ ffmpeg -i "$i" "`basename "$i" .flac`.wav"\\e[0m
